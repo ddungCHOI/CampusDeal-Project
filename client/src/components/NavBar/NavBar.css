@@ -1,0 +1,61 @@
+.menuContainer {
+    padding: 10px 20px 0 20px;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    border-bottom: solid 1px #e8e8e8;
+    overflow: auto;
+    box-shadow: 0 0 30px #f3f1f1;
+    background-color: white;
+}
+
+.menuLogo a{
+    display: inline-block;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 900;
+    margin: auto 20px;
+}
+
+.menuGroup{
+    display: flex;
+    margin-left: auto;
+}
+
+.menuRight {
+    color: #9254de !important;
+    border-bottom: none !important;
+}
+
+.menuMobileButton{
+    height: 32px;
+    padding: 6px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    display: none; /* use of important to overwrite ant-btn */
+    background: #3e91f7
+}
+
+/* iPhone(320) S5(360) iPhone6/7/8/X(375) iPhone+(414) iPad(768) iPad-Pro(1024) */
+@media (max-width: 768px) {
+    .menuLogo {
+        float: left;
+        margin: 0 auto;
+    }
+    .menuLogo a {
+        padding: 10px 20px;
+      }
+
+    .menuGroup {
+        display: none
+    }
+
+    .menuMobileButton {
+      display: block !important;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+}
